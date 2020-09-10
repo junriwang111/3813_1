@@ -48,7 +48,8 @@ N = Node.js, the crowning glory. This is a runtime environment, which runs serve
 
 MongoDB offers a more flexible, accommodating layer for storing data. Node.js provides a better nexus for running your server, while Express.js helps to standardize how you build your websites. On the client-side, AngularJS provides a clean way of adding interactive functions and AJAX-driven rich components. The amalgamation of all makes a clean, coherent mechanism for moving data from the user to the disk farm and back again.
 ##  A list of routes, parameters, return values, and purpose in the sever side
-Please see the attached Ang1.postman_collection.json exported from Postman testing
+Please see the attached Ang1.postman_collection.json within the postman folder exported from Postman testing
+
 ##  Describe the details of the interaction between client and server by indicating how the files and global vars in server side will be changed and how the display of each angular component page will be updated.
 MongoDB has been used for storing backend data.
 However the uploaded photo is still sits under backend node, need improve in assignment 2
