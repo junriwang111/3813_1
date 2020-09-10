@@ -1,0 +1,16 @@
+<form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="text" id="inputUser" class="form-control" placeholder="User Name" [(ngModel)]="username" name="username" required autofocus />
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" [(ngModel)]="password" name="password" required />
+    <div [@noticeState]="noticeName" class="alert alert-warning" role="alert">
+        Credentials not matching
+    </div>
+    <!-- <div class="checkbox mb-3">
+        <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+    </div> -->
+    <button class="btn btn-lg btn-primary btn-block" (click)="itemClicked()" type="submit">
+    Sign in
+  </button>
+</form>
