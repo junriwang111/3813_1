@@ -1,0 +1,45 @@
+<h2>
+    All users
+</h2>
+<div class="column">
+    <ul class="list-group">
+        <li *ngFor="let user of users">
+            <a routerLink="/profile/{{ user.username }}">
+                <span class="list-group-item list-group-item-action" class="badge"></span
+        >{{ user.username }}
+      </a>
+      <button
+        *ngIf="deleteflag"
+        class="delete"
+        title="delete user"
+        (click)="delete(user)"
+      >
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="column">
+  <label><h4>Add a new user</h4></label>
+  <br />
+  <label
+    >User name:
+    <input #userName />
+  </label>
+  <br />
+  <label
+    >Email:
+    <input #userEmail />
+  </label>
+  <br />
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    (click)="
+      add(userName.value, userEmail.value);
+      userName.value = '';
+      userEmail.value = ''
+    "
+  >
+    Add
+  </button>
+</div>

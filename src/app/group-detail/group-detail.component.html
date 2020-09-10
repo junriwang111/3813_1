@@ -1,0 +1,22 @@
+<h2>Channels in Group {{groupName}}:</h2>
+
+<ul class="groups">
+    <li *ngFor="let channel of channels">
+        <a routerLink="/chat/{{channel._id}}">
+            <span class="badge"></span> {{channel.name}}
+        </a>
+        <button class="delete" title="delete channel" (click)="delete(channel)">x</button>
+    </li>
+</ul>
+
+<div>
+    <label><h4>Add new channel into group</h4></label>
+    <br/>
+    <label>Channel name:
+      <input #channelName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(channelName.value); channelName.value='';">
+      Add
+    </button>
+</div>
