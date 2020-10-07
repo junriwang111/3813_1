@@ -1,4 +1,4 @@
-# 3813_1 assignment 1
+# 3813_1 assignment 2
 ## 
 ##  Describe the organization of your Git repository and how you used it during the development of your solution
 The version control fro the develoment is the first create a remote GitHub project, and clone one on local PC, branch from master for front end feature branch, and develop the front end with in-mermory data store, tested all ok, merge back to master, and then push backto remote in GitHub. Do the same thing for the backend to build all the REST APIs, test each REST API with mongodb in Postman to make sure they are all working as expected before commit and merge into master. 
