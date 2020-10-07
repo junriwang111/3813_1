@@ -20,7 +20,7 @@ Cleint side:
 Server side:
 - user api
 - group api
-- cahnnel api
+- channel api
 - socket.io
 
 ##  A description of how you divided the responsibilities between client and server (you are encouraged to have the server provide a REST API which returns JSON in addition to a static directory)
@@ -56,7 +56,7 @@ Services:
 Server side
 - user api
 - group api
-- cahnnel api
+- channel api
 
 Mongodb
 
